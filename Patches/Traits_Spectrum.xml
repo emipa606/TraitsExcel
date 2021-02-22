@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraitDef[defName="SpeedOffset"]/degreeDatas</xpath>
+    <value>
+      <li>
+        <label>dreadfully slow</label>
+        <description>[PAWN_nameDef] just can't move that fast, and [PAWN_pronoun] will most likely never escape a survival situation alone.</description>
+        <degree>-3</degree>
+        <statOffsets>
+          <MoveSpeed>-0.55</MoveSpeed>
+        </statOffsets>
+      </li>
+      <li>
+        <label>sprinter</label>
+        <description>[PAWN_nameDef] always moves extremely fast, like everything is in such a rush.</description>
+        <degree>3</degree>
+        <statOffsets>
+          <MoveSpeed>0.55</MoveSpeed>
+        </statOffsets>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraitDef[defName="Beauty"]/degreeDatas</xpath>
+    <value>
+      <li>
+        <label>gorgeous</label>
+        <description>[PAWN_nameDef] is absolutely gorgeous. Anyone who thinks about [PAWN_objective] will fall in love without hesitation.</description>
+        <degree>3</degree>
+        <marketValueFactorOffset>0.55</marketValueFactorOffset>
+      </li>
+      <li>
+        <label>hideous</label>
+        <description>[PAWN_nameDef] is absolutely hideous. [PAWN_possessive] face looks like a bulldog mixed with a blobfish. No one dares to even set an eye on [PAWN_nameDef] or they may mentally break.</description>
+        <degree>-3</degree>
+        <marketValueFactorOffset>-0.55</marketValueFactorOffset>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraitDef[defName="Industriousness"]/degreeDatas</xpath>
+    <value>
+      <li>
+        <label>workaholic</label>
+        <description>[PAWN_nameDef] is always focused, always active and always finishing first. No matter what, you can't stop this machine.</description>
+        <degree>3</degree>
+        <statOffsets>
+          <WorkSpeedGlobal>0.45</WorkSpeedGlobal>
+        </statOffsets>
+      </li>
+      <li>
+        <label>lethargic</label>
+        <description>[PAWN_nameDef] hates being asked to do anything. [PAWN_pronoun] will not do anything quickly and is always taking [PAWN_possessive] time.</description>
+        <degree>-3</degree>
+        <statOffsets>
+          <WorkSpeedGlobal>-0.45</WorkSpeedGlobal>
+        </statOffsets>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraitDef[defName="ShootingAccuracy"]/degreeDatas</xpath>
+    <value>
+      <li>
+        <label>extra careful shooter</label>
+        <description>[PAWN_nameDef] takes a long time to shoot but almost always hits. [PAWN_pronoun] is most likely to survive a gun situation.</description>
+        <commonality>0.4</commonality>
+        <degree>2</degree>
+        <statOffsets>
+          <AimingDelayFactor>0.35</AimingDelayFactor>
+          <ShootingAccuracyPawn>8</ShootingAccuracyPawn>
+        </statOffsets>
+      </li>
+      <li>
+        <label>bad shooter</label>
+        <description>[PAWN_nameDef] just can't seem to land a shot, it's actually really sad.</description>
+        <commonality>0.5</commonality>
+        <degree>-2</degree>
+        <statOffsets>
+          <AimingDelayFactor>-0.5</AimingDelayFactor>
+          <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
+        </statOffsets>
+      </li>
+    </value>
+  </Operation>
+</Patch>
