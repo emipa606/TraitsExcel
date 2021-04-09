@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TraitDef[defName = "SpeedOffset"]/modExtensions/li[@Class="SyrTraitValue.TraitValueExtension"]/traitValues</xpath>
+    <value>
+      <li>-2, -20</li>
+      <li>3, 40</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TraitDef[defName = "Beauty"]/modExtensions/li[@Class="SyrTraitValue.TraitValueExtension"]/traitValues</xpath>
+    <value>
+      <li>-3, -40</li>
+      <li>3, 40</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TraitDef[defName = "Industriousness"]/modExtensions/li[@Class="SyrTraitValue.TraitValueExtension"]/traitValues</xpath>
+    <value>
+      <li>-3, -30</li>
+      <li>3, 30</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TraitDef[defName = "ShootingAccuracy"]/modExtensions/li[@Class="SyrTraitValue.TraitValueExtension"]/traitValues</xpath>
+    <value>
+      <li>-2, -20</li>
+      <li>2, 20</li>
+    </value>
+  </Operation>
+</Patch>

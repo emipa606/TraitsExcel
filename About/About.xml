@@ -10,12 +10,15 @@
     <li>1.2</li>
   </supportedVersions>
   <modDependencies />
-  <loadAfter />
+  <loadAfter>
+    <li>syrchalis.traitvalue</li>
+  </loadAfter>
   <description>[img]https://i.imgur.com/WAEzk68.png[/img]
 Update of PsyKicks mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1389054729
 
 - Rewrote it to use patches instead to avoid overwriting vanilla code
+- Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value[/url]
 
 [img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
@@ -59,4 +62,3 @@ This is my first mod that I have published on Steam but am working on a huge mod
 [/list]
 </description>
 </ModMetaData>
-

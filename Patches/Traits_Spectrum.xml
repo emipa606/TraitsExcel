@@ -6,7 +6,7 @@
       <li>
         <label>dreadfully slow</label>
         <description>[PAWN_nameDef] just can't move that fast, and [PAWN_pronoun] will most likely never escape a survival situation alone.</description>
-        <degree>-3</degree>
+        <degree>-2</degree>
         <statOffsets>
           <MoveSpeed>-0.55</MoveSpeed>
         </statOffsets>
