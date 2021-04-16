@@ -12,6 +12,7 @@
   <modDependencies />
   <loadAfter>
     <li>syrchalis.traitvalue</li>
+    <li>consolidatedtraits.kv.rw</li>
   </loadAfter>
   <description>[img]https://i.imgur.com/WAEzk68.png[/img]
 Update of PsyKicks mod

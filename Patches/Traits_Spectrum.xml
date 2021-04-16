@@ -59,29 +59,32 @@
       </li>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/TraitDef[defName="ShootingAccuracy"]/degreeDatas</xpath>
-    <value>
-      <li>
-        <label>extra careful shooter</label>
-        <description>[PAWN_nameDef] takes a long time to shoot but almost always hits. [PAWN_pronoun] is most likely to survive a gun situation.</description>
-        <commonality>0.4</commonality>
-        <degree>2</degree>
-        <statOffsets>
-          <AimingDelayFactor>0.35</AimingDelayFactor>
-          <ShootingAccuracyPawn>8</ShootingAccuracyPawn>
-        </statOffsets>
-      </li>
-      <li>
-        <label>bad shooter</label>
-        <description>[PAWN_nameDef] just can't seem to land a shot, it's actually really sad.</description>
-        <commonality>0.5</commonality>
-        <degree>-2</degree>
-        <statOffsets>
-          <AimingDelayFactor>-0.5</AimingDelayFactor>
-          <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
-        </statOffsets>
-      </li>
-    </value>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/TraitDef[defName="ShootingAccuracy"]/degreeDatas/li[degree="2"]</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/TraitDef[defName="ShootingAccuracy"]/degreeDatas</xpath>
+      <value>
+        <li>
+          <label>extra careful shooter</label>
+          <description>[PAWN_nameDef] takes a long time to shoot but almost always hits. [PAWN_pronoun] is most likely to survive a gun situation.</description>
+          <commonality>0.4</commonality>
+          <degree>2</degree>
+          <statOffsets>
+            <AimingDelayFactor>0.35</AimingDelayFactor>
+            <ShootingAccuracyPawn>8</ShootingAccuracyPawn>
+          </statOffsets>
+        </li>
+        <li>
+          <label>bad shooter</label>
+          <description>[PAWN_nameDef] just can't seem to land a shot, it's actually really sad.</description>
+          <commonality>0.5</commonality>
+          <degree>-2</degree>
+          <statOffsets>
+            <AimingDelayFactor>-0.5</AimingDelayFactor>
+            <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
+          </statOffsets>
+        </li>
+      </value>
+    </nomatch>
   </Operation>
 </Patch>
